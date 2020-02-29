@@ -51,7 +51,6 @@ const IndexPage = () => (
                   method="POST"
                   action="/success"
                   data-netlify="true"
-                  data-netlify-honeypot="bot-field"
                 >
                   <div>
                     <input
@@ -74,12 +73,6 @@ const IndexPage = () => (
                       name="phone"
                       className="text-field"
                       required
-                    />
-                    <input
-                      type="hidden"
-                      name="form-name"
-                      value="contact"
-                      className="text-field"
                     />
                     <button type="submit" className="btn-primary">
                       Submit

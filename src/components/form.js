@@ -9,7 +9,6 @@ const ContactForm = () => {
       method="POST"
       action="/success"
       data-netlify="true"
-      data-netlify-honeypot="bot-field"
       className="form"
     >
       <input
@@ -32,12 +31,6 @@ const ContactForm = () => {
         name="phone"
         className="text-field"
         required
-      />
-      <input
-        type="hidden"
-        name="form-name"
-        value="contact"
-        className="text-field"
       />
       <textarea
         placeholder="My roof is in need of repair and I would like my initial consultation!"
