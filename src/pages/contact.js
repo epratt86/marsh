@@ -24,14 +24,17 @@ const ContactPage = () => (
             <p>
               Have a leaky roof or in need of a contractor? Please use the form
               to get in touch with a professional. Request your free initial
-              consultation! Or, give us a call at&nbsp;
+              consultation!{" "}
+            </p>
+            <br />
+            <p>
+              Or, give us a call at&nbsp;
               <a
                 href="tel:619-669-1600"
                 style={{ textDecoration: "none", color: "#ff9800" }}
               >
                 619 669 1600
               </a>
-              .
             </p>
           </div>
           <div className="row">
