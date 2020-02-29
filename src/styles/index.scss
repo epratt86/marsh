@@ -11,7 +11,7 @@
       url("../images/roofer.jpg");
     background-size: cover;
     background-position-y: center;
-    height: 80vh;
+    min-height: 80vh;
     display: flex;
     flex-direction: column;
     color: #fff;
@@ -74,9 +74,10 @@
 @media (max-width: 768px) {
   .home {
     .landing {
+      min-height: 87vh;
       .row {
         display: block;
-        margin-top: 16rem;
+        margin-top: 12rem;
       }
     }
   }
