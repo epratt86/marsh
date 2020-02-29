@@ -51,33 +51,42 @@ const IndexPage = () => (
                   method="POST"
                   action="/success"
                   data-netlify="true"
+                  data-netlify-honeypot="bot-field"
                 >
-                  <div>
-                    <input
-                      type="text"
-                      placeholder="Name"
-                      name="name"
-                      className="text-field"
-                      required
-                    />
-                    <input
-                      type="email"
-                      placeholder="Email Address"
-                      name="email"
-                      className="text-field"
-                      required
-                    />
-                    <input
-                      type="text"
-                      placeholder="Phone Number"
-                      name="phone"
-                      className="text-field"
-                      required
-                    />
-                    <button type="submit" className="btn-primary">
-                      Submit
-                    </button>
-                  </div>
+                  <input
+                    type="hidden"
+                    name="form-name"
+                    value="initial-consultation"
+                  />
+                  <p hidden>
+                    <label>
+                      dont fill this out <input name="bot-field" />
+                    </label>
+                  </p>
+                  <input
+                    type="text"
+                    placeholder="Name"
+                    name="name"
+                    className="text-field"
+                    required
+                  />
+                  <input
+                    type="email"
+                    placeholder="Email Address"
+                    name="email"
+                    className="text-field"
+                    required
+                  />
+                  <input
+                    type="text"
+                    placeholder="Phone Number"
+                    name="phone"
+                    className="text-field"
+                    required
+                  />
+                  <button type="submit" className="btn-primary">
+                    Submit
+                  </button>
                 </form>
               </article>
             </div>

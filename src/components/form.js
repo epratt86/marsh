@@ -11,6 +11,12 @@ const ContactForm = () => {
       data-netlify="true"
       className="form"
     >
+      <input type="hidden" name="form-name" value="contact" />
+      <p hidden>
+        <label>
+          dont fill this out <input name="bot-field" />
+        </label>
+      </p>
       <input
         type="text"
         placeholder="Name"
