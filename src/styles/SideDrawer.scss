@@ -1,0 +1,59 @@
+@import "./globals.scss";
+
+.side-drawer {
+  position: fixed;
+  top: 100px;
+  min-height: 350px;
+  height: 40%;
+  background: $primary-color;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0px 5px 3px rgba(0, 0, 0, 0.5);
+  max-width: 400px;
+  width: 70%;
+  text-align: center;
+  z-index: 200;
+  opacity: 0.85;
+  right: -100%;
+  animation: slide-open 0.5s forwards;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+
+  ul {
+    height: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin-top: 4rem;
+
+    li {
+      margin: 1rem 0;
+    }
+  }
+
+  a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  a:hover,
+  a:active {
+    color: $secondary-color;
+  }
+}
+
+.side-drawer.close {
+  right: -100%;
+}
+
+@keyframes slide-open {
+  100% {
+    right: 0;
+  }
+}
+
+@media (min-width: 769px) {
+  .side-drawer {
+    display: none;
+  }
+}

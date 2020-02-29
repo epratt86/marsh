@@ -1,0 +1,41 @@
+@import "globals.scss";
+
+.contact {
+  margin-top: 100px;
+  font-family: "Source Sans Pro", sans-serif;
+
+  .content {
+    padding: 2rem 0;
+    background: $white-color;
+    text-align: center;
+
+    .row {
+      text-align: center;
+    }
+  }
+  .contact-form {
+    background: #ffffff;
+    padding: 2rem;
+    max-width: 700px;
+    margin: 2rem auto;
+  }
+  .contact-header {
+    max-width: 700px;
+    margin: 0 auto;
+
+    p {
+      font-size: 1.2rem;
+      line-height: 30px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact {
+    .content {
+      .row {
+        display: block;
+      }
+    }
+  }
+}

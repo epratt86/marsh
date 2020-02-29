@@ -1,0 +1,92 @@
+@import "globals.scss";
+
+.home {
+  margin-top: 100px;
+  .landing {
+    background: linear-gradient(
+        to bottom right,
+        rgba(0, 47, 75, 0.6),
+        rgba(39, 44, 56, 0.8)
+      ),
+      url("../images/roofer.jpg");
+    background-size: cover;
+    background-position-y: center;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    font-family: "Roboto";
+
+    .row {
+      display: grid;
+      grid-template-columns: 700px auto;
+      grid-gap: 2rem;
+      margin-top: 6rem;
+      h4,
+      h5 {
+        font-family: "Source Sans Pro", sans-serif;
+        font-size: 1.2rem;
+        line-height: 2rem;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
+
+.consultation {
+  background: $grey-color;
+  border-radius: 10px;
+  box-shadow: 3px 4px 6px 2px rgba(0, 0, 0, 0.5);
+  .intro {
+    color: #000;
+    padding: 10px 1rem;
+    line-height: 1.8rem;
+    text-align: center;
+  }
+
+  form {
+    padding: 10px 1rem;
+  }
+  .text-field {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    padding: 0.6rem 0.2rem;
+    background: #eee;
+  }
+
+  .input-field {
+    width: 100%;
+    padding: 0.7rem 0.2rem;
+    background: #eee;
+  }
+}
+
+.headline {
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  line-height: 3rem;
+  margin-bottom: 1rem;
+}
+@media (max-width: 768px) {
+  .home {
+    .landing {
+      .row {
+        display: block;
+        margin-top: 16rem;
+      }
+    }
+  }
+  .left {
+    margin-top: -10rem;
+  }
+  .headline {
+    font-size: 1.6rem;
+  }
+  .consultation {
+    display: none;
+  }
+}

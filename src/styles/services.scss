@@ -1,0 +1,55 @@
+@import "globals.scss";
+
+.services {
+  margin-top: 100px;
+
+  .content {
+    padding: 2rem 0;
+    background: $white-color;
+  }
+  .row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+    background: #ffffff;
+    margin-bottom: 1rem;
+
+    .list {
+      font-family: "Source Sans Pro", sans-serif;
+      line-height: 30px;
+      margin-bottom: 10px;
+      margin-left: 20px;
+      list-style-position: outside;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+  .card {
+    padding: 2rem;
+  }
+  .img {
+    margin: auto 0;
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .services {
+    .row {
+      display: flex;
+      flex-direction: column;
+
+      .list {
+        order: 0;
+      }
+      .card {
+        padding: 1rem;
+      }
+      .img {
+        order: -1;
+        padding: 0;
+      }
+    }
+  }
+}
